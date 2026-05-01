@@ -1,64 +1,90 @@
+<!DOCTYPE html>
 <html>
     <head>
-   <title>Mr.Camel</title>
-     
-  </head>
-  <body> 
-  <table border=1 width=100% >
-  <form>
-      <tr style="background-color:#f5f5f5">
-    
-     <th colspan=4><h1 style="text-align:left"> <Font face="Segoe Script"> Mr.Camel</th>
-    
-        </tr>
-    <tr>
-        <td rowspan=2 width=5 ><img src="Mr.camel.jpg" width="200px"><br>
-        <select style=" background-color:#00ffff">
-      <input type="textbox" value="Home" style="background-color:#00ffff" ,style="color:white" ><br>
-      Career<br>
-      Contact<br>
-      About<br>
-      </select><br><br><br><br><br><br>
-       
-       <p>"Do Something important in <br>life.I convert green grass to<br> code."</p>
-       <p>-Mr.Camel</p>
-       
-       <td><h3><p><b>About Me</b><h3></p>
-            <p><h5>I don't look like some handsome horse,but I am a real desert king.I can servive days without water.</h5></P>
-          
-        <p><h3><b>My Career</b></h3>
-        <p>I work as a web developer for a company that makes website for camel businesses</p></td>
-<tr><td>
-     <h3><p><b>How Can I Help You?</b></p></h3>
-     <table border=1 width=100%>
-     <tr style="background-color:#00ffff">
-     <center><th style="color:white">SKILL-1</th>
-     <th style="color:white">SKILL-2</th>
-     <th style="color:white">SKILL-3</th></td></center>
-     </tr></td>
-     <tr>
-     <td>Cleaning kaktus in your backyard</td>
-     <td>Storing some fat for you</td>
-     <td>Taking you through the desert</td>
-      </tr>
-      </td>
-     </table><br><br><br>
-    <form>
-       Email:<input type="email"><br><br>
-       Mobile:<input type="Number"><br><br>
-       <textarea rows=10 col=18 >Enter your message</textarea><br><br>
-       <input type="submit">
-    </form>
-    <tr style="background-color:#367588">
-    <td colspan=4 style="color:white"><center><b><h1>©Copingright Mr.Camel</h1> </center></td>
-    </tr>
-    
-    
-    
-      
-  </form>
-  </table>  
-       
-     
+        <title>Mr.Camel</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            .header {
+                background-color: #f5f5f5;
+            }
+            .sidebar {
+                background-color: #00ffff;
+                width: 200px;
+            }
+            .skills-header {
+                background-color: #00ffff;
+                color: white;
+            }
+            .footer {
+                background-color: #367588;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body> 
+        <table border="1">
+            <tr class="header">
+                <th colspan="4"><h1 style="text-align:left; font-family: 'Segoe Script';">Mr.Camel</h1></th>
+            </tr>
+            <tr>
+                <td rowspan="2" class="sidebar">
+                    <img src="Mr.camel.jpg" width="200px" alt="Mr. Camel"><br><br>
+                    <button style="background-color:#00ffff; width: 100%; padding: 10px;">Home</button><br><br>
+                    <button style="background-color:#00ffff; width: 100%; padding: 10px;">Career</button><br><br>
+                    <button style="background-color:#00ffff; width: 100%; padding: 10px;">Contact</button><br><br>
+                    <button style="background-color:#00ffff; width: 100%; padding: 10px;">About</button><br><br>
+                    <p>"Do Something important in life. I convert green grass to code."</p>
+                    <p>-Mr.Camel</p>
+                </td>
+                <td colspan="3">
+                    <h3><b>About Me</b></h3>
+                    <p>I don't look like some handsome horse, but I am a real desert king. I can survive days without water.</p>
+                    
+                    <h3><b>My Career</b></h3>
+                    <p>I work as a web developer for a company that makes website for camel businesses</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h3><b>How Can I Help You?</b></h3>
+                    <table border="1" width="100%">
+                        <tr class="skills-header">
+                            <th>SKILL-1</th>
+                            <th>SKILL-2</th>
+                            <th>SKILL-3</th>
+                        </tr>
+                        <tr>
+                            <td>Cleaning kaktus in your backyard</td>
+                            <td>Storing some fat for you</td>
+                            <td>Taking you through the desert</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <form>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"><br><br>
+                        <label for="mobile">Mobile:</label>
+                        <input type="number" id="mobile"><br><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" rows="10" cols="50">Enter your message</textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </td>
+            </tr>
+            <tr class="footer">
+                <td colspan="4"><h2>©Copyright Mr.Camel</h2></td>
+            </tr>
+        </table>
     </body>
-  </html>
+</html>
